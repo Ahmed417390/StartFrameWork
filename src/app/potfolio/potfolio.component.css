@@ -1,0 +1,45 @@
+i{
+    font-size: 20px;
+    position: relative;
+    z-index: -1;
+}
+
+.i::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    right: 52%;
+    top: 12%;
+    background-color: #000;
+
+}
+.i::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    left: 52%;
+    top: 12%;
+    background-color: #000;
+
+
+}
+
+
+
+.lightbox-container{
+    width: 100%;
+    height: 100%;
+    background-color: #010000b3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right :0;
+    left: 0;
+ 
+}
+
+svg{
+    fill: white;
+}

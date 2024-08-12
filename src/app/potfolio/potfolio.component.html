@@ -1,0 +1,46 @@
+<section class="portfolio1 p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-center text-capitalize">Portfolio component</h2>
+                <div class="position-relative">
+                    <div class="i">
+                      <i class="fa-solid fa-star mb-5  mb-5"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3" (click)=" open('./assets/images/poert1.png')">
+                <img src="./assets/images/poert1.png" class="w-100  rounded-3" alt="portfolio">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3"  (click)=" open('./assets/images/port2.png')">
+                <img src="./assets/images/port2.png" class="w-100  rounded-3" alt="portfolio">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3"  (click)=" open('./assets/images/port3.png')">
+                <img src="./assets/images/port3.png" class="w-100  rounded-3" alt="portfolio">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3"  (click)=" open('./assets/images/poert1.png')">
+                <img src="./assets/images/poert1.png" class="w-100  rounded-3" alt="portfolio">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3"  (click)=" open('./assets/images/port2.png')">
+                <img src="./assets/images/port2.png" class="w-100  rounded-3" alt="portfolio">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3"  (click)=" open('./assets/images/port3.png')">
+                <img src="./assets/images/port3.png" class="w-100  rounded-3" alt="portfolio">
+            </div>
+        </div>
+
+        @if (isClick == true) {
+            <div class="lightbox-container d-flex justify-content-center align-items-center ">
+                <div class="lightbox-item d-flex justify-content-center align-items-center position-relative">
+                    <img [src]="imgSrc" class="w-50 mx-auto mt-3" />
+                  <div class="w-25" (click)="close()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-25" ><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" /></svg>
+                </div>
+                </div>
+            </div>
+        }
+   
+</section>

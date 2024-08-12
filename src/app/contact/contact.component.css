@@ -1,0 +1,30 @@
+i{
+    font-size: 20px;
+}
+
+.i::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    right: 40%;
+    top: 12%;
+    background-color: black;
+
+}
+.i::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    left: 40%;
+    top: 12%;
+    background-color: black;
+
+
+}
+
+button{
+    background-color: #1abc9c;
+    color: white;
+}
